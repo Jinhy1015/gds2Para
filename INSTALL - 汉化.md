@@ -164,3 +164,4 @@
 5. 运行 `cmake ..` 来生成一个 makefile
 6. 从同一位置（工作位置中的“hypre/src/cmbuild”）运行`make install -j 2`以安装头文件
 7. 返回工作目录并通过运行`ls -lh hypre/src/hypre/include`确保存在名为**HYPRE.h**的新库文件
+

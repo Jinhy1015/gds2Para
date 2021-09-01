@@ -18,6 +18,7 @@
     * OpenMPI (OpenMPI version 4.0.1 or newer): `which mpicc`, `which mpicxx`
     * Zlib (Zlib version 3.13 or newer): `locate "zlib.h"`
     * 如果没有安装这些程序中的任何一个，那么建议具有 root 访问权限的人使用包管理器（大多数程序）或通过从源代码构建（GCC、Boost 和 OpenMPI）来安装缺少的任何程序。
+    
 2. 使用以下命令将此存储库克隆到您的工作位置 `git clone git@github.com:purdue-onchip/gds2Para.git`
     * 如果克隆失败，通常的原因是无法与服务器建立安全连接。 克隆很重要，以便能够使用 `git` 接收更新。 这些步骤将帮助你开始使用 `git`：
         1. 通过在您的主目录中运行 `ls -lh .ssh` 来检查您是否有任何公钥，例如 **id_rsa.pub**
@@ -164,4 +165,3 @@
 5. 运行 `cmake ..` 来生成一个 makefile
 6. 从同一位置（工作位置中的“hypre/src/cmbuild”）运行`make install -j 2`以安装头文件
 7. 返回工作目录并通过运行`ls -lh hypre/src/hypre/include`确保存在名为**HYPRE.h**的新库文件
-

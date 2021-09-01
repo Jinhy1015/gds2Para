@@ -15,6 +15,10 @@
     * CMake (CMake version 3.7.0 or newer): `which cmake` and `cmake --version`
     * git: `which git`
     * Intel Math Kernel Library (MKL): `locate "mklvars.sh"`
+    
+    *MKL下载地址
+    https://software.intel.com/content/www/us/en/develop/articles/oneapi-standalone-components.html#onemkl
+    
     * Lemon: `which lemon`
     * OpenMPI (OpenMPI version 4.0.1 or newer): `which mpicc`, `which mpicxx`
     * Zlib (Zlib version 3.13 or newer): `locate "zlib.h"`

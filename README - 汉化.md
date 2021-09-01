@@ -30,7 +30,7 @@
 | [Parser-SPEF](https://github.com/OpenTimer/Parser-SPEF/)                      | C++              | parser-spef                            | API for SPEF file processing                                      |
 | Preprocessor                     | C/C++            | n/a                                    | Inclusion, definitions, and macros such as assertion with message |
 
-Note that modern compilers that support the following language standards are needed to make the package dependencies: GNU Fortran (superset of F95) for Fortran, C99 for C language, and C++17 for C++.
+请注意，需要支持以下语言标准的现代编译器来生成包依赖项：用于 Fortran 的 GNU Fortran（F95 的超集）、用于 C 语言的 C99 和用于 C++ 的 C++17。
 
 ## Custom Classes
 | Structure / Class Name   | Header                  | Description                                                       |

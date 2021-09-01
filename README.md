@@ -61,7 +61,7 @@
 | fdtdPort                 | fdtd                    | 端口的求解器表示                                                    |
 
 ## 开发者
-所有软件都在积极开发中，没有任何关于更新性质时间的通知。 欢迎通过分叉和[拉取请求]（https://github.com/purdue-onchip/gds2Para/pulls）做出贡献。 请将与此存储库相关的所有问题、错误报告和问题直接发送给主要维护者：
+所有软件都在积极开发中，没有任何关于更新性质时间的通知。 欢迎通过分叉和[拉取请求](https://github.com/purdue-onchip/gds2Para/pulls)做出贡献。 请将与此存储库相关的所有问题、错误报告和问题直接发送给主要维护者：
 * [Michael Hayashi](mailto:mhayashi@purdue.edu?subject=Inquiry%20for%20gdsii-interface)，普渡大学ECE学院研究生研究助理
 
 开发者:

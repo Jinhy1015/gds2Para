@@ -18,6 +18,9 @@
     
     *MKL下载地址
     https://software.intel.com/content/www/us/en/develop/articles/oneapi-standalone-components.html#onemkl
+    wget
+    chmod u+x *.sh
+    ./*.sh
     
     * Lemon: `which lemon`
     * OpenMPI (OpenMPI version 4.0.1 or newer): `which mpicc`, `which mpicxx`

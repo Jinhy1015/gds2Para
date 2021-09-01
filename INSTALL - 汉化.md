@@ -3,6 +3,7 @@
 
 ## 安装和使用
 1.通过查看这些类别中的以下每个命令是否有输出，确保机器上安装了以下程序：
+
     * Selected package manager development tools
         * GNU Autoconf: `which autoconf`
         * GNU Automake: `which automake`

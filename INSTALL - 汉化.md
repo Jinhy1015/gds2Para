@@ -25,6 +25,7 @@
     wget
     chmod u+x *.sh
     ./*.sh
+    安装位置/opt/intel/oneapi
     
     * Lemon: `which lemon`
     * OpenMPI (OpenMPI version 4.0.1 or newer): `which mpicc`, `which mpicxx`

@@ -12,6 +12,10 @@
         * GNU Compiler Collection (GCC version 7 or newer): `which gcc`, `which g++`, and `which gfortran`
         * GNU Make: `which make`
     * Boost C++ Libraries (Boost version 1.57.0 or newer): `locate "filtering_stream.hpp"`
+    
+    apt-cache search boost
+    apt-get install libboost-all-dev
+    
     * CMake (CMake version 3.7.0 or newer): `which cmake` and `cmake --version`
     * git: `which git`
     * Intel Math Kernel Library (MKL): `locate "mklvars.sh"`

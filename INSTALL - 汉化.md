@@ -33,7 +33,9 @@
 
 **加速运行库
 安装命令
+
    apt-cache search boost
+   
    apt-get install libboost-all-dev**
     
 * CMake (CMake version 3.7.0 or newer): `which cmake` and `cmake --version`

@@ -5,23 +5,35 @@
 1.通过查看这些类别中的以下每个命令是否有输出，确保机器上安装了以下程序：
 
     * Selected package manager development tools
-        * GNU Autoconf: `which autoconf`
+* GNU Autoconf: `which autoconf`
 **GNU Autoconf是一个在Bourne shell下制作供编译、安装和打包软件的配置脚本的工具[1]。Autoconf并不受程式语言限制，常用于C、C++、Erlang和Objective-C。配置脚本控制了一个软件包在特定系统上的安装。在进行一系列测试后，配置脚本从模板中生成makefile与头文件进而调整软件包，使之适应某一种系统。Autoconf与Automake、Libtool等软件组成了GNU构建系统[2]。Autoconf由戴维·麦肯思于1991年夏天编写用于支持他在自由软件基金会的编程工作[3]。此后，Autoconf包含了多人编写的改进代码并成为了使用最广泛的自由编译配置软件。**
          
-        * GNU Automake: `which automake`
+* GNU Automake: `which automake`
 **GNU Automake是一种编程工具，可以产生供make程序使用的Makefile，用来编译程序。它是自由软件基金会发起的GNU计划的其中一项，作为GNU构建系统的一部分。automake所产生的Makefile符合GNU编程标准。**
-        
-        
-        * GNU Bison: `which bison`
-        * Flex: `which flex`
-        * GNU Compiler Collection (GCC version 7 or newer): `which gcc`, `which g++`, and `which gfortran`
-        * GNU Make: `which make`
-    * Boost C++ Libraries (Boost version 1.57.0 or newer): `locate "filtering_stream.hpp"`
+
+* GNU Bison: `which bison`
+**GNU bison（Bison意为犎牛；而Yacc与意为牦牛的Yak同音）是一个自由软件，用于自动生成语法分析器程序，实际上可用于所有常见的操作系统。Bison把LALR形式的上下文无关文法描述转换为可做语法分析的C或C++程序。在新近版本中，Bison增加了对GLR语法分析算法的支持。**
+
+* Flex: `which flex`
+**fast lexical analyzer generator）是一种词法分析程序。它是lex的开放源代码版本，以BSD许可证发布。通常与GNU bison一同运作，但是它本身不是GNU计划的一部分。**
+
+* GNU Compiler Collection (GCC version 7 or newer): `which gcc`, `which g++`, and `which gfortran`
+**编译器**
+
+* GNU Make: `which make`
+**编译命令**
+
+* Boost C++ Libraries (Boost version 1.57.0 or newer): `locate "filtering_stream.hpp"`
+**加速运行库**
+**安装命令
+   apt-cache search boost
+   apt-get install libboost-all-dev**
     
-    apt-cache search boost
-    apt-get install libboost-all-dev
-    
-    * CMake (CMake version 3.7.0 or newer): `which cmake` and `cmake --version`
+* CMake (CMake version 3.7.0 or newer): `which cmake` and `cmake --version`
+**ubuntu需更新到最新版本**
+** 查看版本号 cmake --version 
+apt remove cmake**
+
     * git: `which git`
     * Intel Math Kernel Library (MKL): `locate "mklvars.sh"`
     

@@ -42,18 +42,38 @@
 * CMake (CMake version 3.7.0 or newer): `which cmake` and `cmake --version`
 
 **ubuntu需更新到最新版本**
-** 查看版本号 cmake --version 
-apt remove cmake**
+
+* 查看版本号: `cmake --version`
+
+* 卸载cmake安装包: `apt remove cmake`
+
+* 下载cmake安装包: `wget https://github.com/Kitware/CMake/releases/download/v3.21.2/cmake-3.21.2.tar.gz` 获取地址: `https://cmake.org/download/`
+
+* 解压cmake安装包:  `tar -zxvf cmake-3.21.2.tar.gz`
+
+* 此处待补全
 
     * git: `which git`
     * Intel Math Kernel Library (MKL): `locate "mklvars.sh"`
-    
-    *MKL下载地址
-    https://software.intel.com/content/www/us/en/develop/articles/oneapi-standalone-components.html#onemkl
-    wget
-    chmod u+x *.sh
-    ./*.sh
-    安装位置/opt/intel/oneapi
+
+   wget http://registrationcenter-download.intel.com/akdlm/irc_nas/tec/14895/l_mkl_2019.1.144.tgz
+   tar -zxvf l_mkl_2019.1.144.tgz
+   cd l_mkl_2019.1.144/
+   ./install.sh
+   
+   **此处注意修改`path`为/opt/intel**
+   
+      sudo vim /etc/ld.so.conf.d/intel-mkl.conf
+   
+      /path/intel/mkl/lib/intel64
+       
+      /path/intel/lib/intel64
+   
+      sudo ldconfig
+   
+      cd /path/intel/mkl/bin
+   
+      source mklvars.sh intel64
     
     * Lemon: `which lemon`
     * OpenMPI (OpenMPI version 4.0.1 or newer): `which mpicc`, `which mpicxx`

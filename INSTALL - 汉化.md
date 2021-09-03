@@ -4,7 +4,8 @@
 ## 安装和使用
 1.通过查看这些类别中的以下每个命令是否有输出，确保机器上安装了以下程序：
 
-    * Selected package manager development tools
+* Selected package manager development tools
+
 * GNU Autoconf: `which autoconf`
 
 **GNU Autoconf是一个在Bourne shell下制作供编译、安装和打包软件的配置脚本的工具[1]。Autoconf并不受程式语言限制，常用于C、C++、Erlang和Objective-C。配置脚本控制了一个软件包在特定系统上的安装。在进行一系列测试后，配置脚本从模板中生成makefile与头文件进而调整软件包，使之适应某一种系统。Autoconf与Automake、Libtool等软件组成了GNU构建系统[2]。Autoconf由戴维·麦肯思于1991年夏天编写用于支持他在自由软件基金会的编程工作[3]。此后，Autoconf包含了多人编写的改进代码并成为了使用最广泛的自由编译配置软件。**
@@ -80,7 +81,7 @@
     * Zlib (Zlib version 3.13 or newer): `locate "zlib.h"`
     * 如果没有安装这些程序中的任何一个，那么建议具有 root 访问权限的人使用包管理器（大多数程序）或通过从源代码构建（GCC、Boost 和 OpenMPI）来安装缺少的任何程序。
     
-2. 使用以下命令将此存储库克隆到您的工作位置 `git clone git@github.com:purdue-onchip/gds2Para.git`
+1. 使用以下命令将此存储库克隆到您的工作位置 `git clone git@github.com:purdue-onchip/gds2Para.git`
     * 如果克隆失败，通常的原因是无法与服务器建立安全连接。 克隆很重要，以便能够使用 `git` 接收更新。 这些步骤将帮助你开始使用 `git`：
         1. 通过在您的主目录中运行 `ls -lh .ssh` 来检查您是否有任何公钥，例如 **id_rsa.pub**
         2. 如果没有出现公钥，则通过在您的主目录中运行 `ssh-keygen -t rsa -C <email>` 来生成一个，其中 \<email> 是您的工作电子邮件地址（请注意，此实用程序可能不适用于所有机器）
@@ -95,25 +96,25 @@
         1. 将 zip 存档移动到工作位置
         2. 使用命令 `unzip gds2Para-master.zip` 解压缩档案
         3. 将最近创建的目录从"gds2Para-master"重命名为"gds2Para"
-3. 使用 `git clone https://github.com/limbo018/Limbo.git` 将 [Limbo 存储库](https://github.com/limbo018/Limbo) 克隆到您的工作位置
+2. 使用 `git clone https://github.com/limbo018/Limbo.git` 将 [Limbo 存储库](https://github.com/limbo018/Limbo) 克隆到您的工作位置
     * 如果克隆失败，请尝试通过单击 Limbo 存储库代码选项卡上的绿色“克隆或下载”按钮，然后单击“下载 ZIP”来下载文件
         1. 将 zip 存档移动到工作位置
         2. 使用“unzip Limbo-master.zip”解压缩存档
         3. 将最近创建的目录从“Limbo-master”重命名为“Limbo”
-4. 使用 `git clone https://github.com/OpenTimer/Parser-SPEF.git` 将 [Parser-SPEF 存储库](https://github.com/OpenTimer/Parser-SPEF) 克隆到您的工作位置
+3. 使用 `git clone https://github.com/OpenTimer/Parser-SPEF.git` 将 [Parser-SPEF 存储库](https://github.com/OpenTimer/Parser-SPEF) 克隆到您的工作位置
     * 如果克隆失败，请尝试通过单击 Parser-SPEF 存储库代码选项卡上的绿色“克隆或下载”按钮，然后单击“下载 ZIP”来下载文件
         1. 将 zip 存档移动到工作位置
         2. 使用“unzip Parser-SPEF-master.zip”解压缩档案
         3. 将最近创建的目录从“Parser-SPEF-master”重命名为“Parser-SPEF”
-5. 使用 `git clone https://github.com/eigenteam/eigen-git-mirror 将 [eigen-git-mirror 存储库](https://github.com/eigenteam/eigen-git-mirror) 克隆到您的工作位置
+4. 使用 `git clone https://github.com/eigenteam/eigen-git-mirror 将 [eigen-git-mirror 存储库](https://github.com/eigenteam/eigen-git-mirror) 克隆到您的工作位置
     * 如果克隆失败，请尝试通过单击 eigen-git-mirror 存储库的“代码”选项卡上的绿色“克隆或下载”按钮，然后单击"下载 ZIP"来下载文件
         1. 将 zip 存档移动到工作位置
         2. 使用 `unzip eigen-git-mirror-master.zip`解压缩档案
         3. 将最近创建的目录从"eigen-git-mirror-master"重命名为"eigen-git-mirror"
-6. 确保您是具有完全读/写/执行权限的下载文件的所有者
+5. 确保您是具有完全读/写/执行权限的下载文件的所有者
     * 使用命令 `chown -R <username>:<username> <directory>` 修改所有权, 此处 \<username> 为用户名 \<directory> 分别为 "gds2Para/", "Limbo/", "Parser-SPEF/", 或 "eigen-git-mirror/"
     * 修改权限 `chmod -R 744 <directory>`, 此处 \<directory> 分别为 "gds2Para/", "Limbo/", "Parser-SPEF/", 或 "eigen-git-mirror/"
-7. 根据 `echo $SHELL` 指示的 shell 修改运行命令文件，将 \<absolute path to C compiler> 替换为 C 语言编译器的有效路径，\<absolute path to C++ compiler> 替换为有效路径C++ 编译器，\<Fortran 编译器的绝对路径> 用于 Fortran 编译器的有效路径，\<OpenMPI 二进制文件的绝对路径> 用于 OpenMPI 二进制文件的有效路径，\<OpenMPI 静态库的绝对路径> 用于有效路径到 OpenMPI 静态库，\<Boost 目录的绝对路径> 为 Boost C++ 头文件目录的有效路径，\<Limbo 目录的绝对路径> 为 Limbo 目录的有效路径，\<Parser-SPEF 的绝对路径directory> 为 Parser_SPEF 目录的有效路径，\<本征目录的绝对路径> 为本征目录的有效路径，\<未来 HYPRE 目录的绝对路径> 为尚未创建的 HYPRE 目录的有效路径，和 \<absolute path to MKL directory> 为 Intel Math Kernal L 的有效路径ibrary (MKL) 目录
+6. 根据 `echo $SHELL` 指示的 shell 修改运行命令文件，将 \<absolute path to C compiler> 替换为 C 语言编译器的有效路径，\<absolute path to C++ compiler> 替换为有效路径C++ 编译器，\<Fortran 编译器的绝对路径> 用于 Fortran 编译器的有效路径，\<OpenMPI 二进制文件的绝对路径> 用于 OpenMPI 二进制文件的有效路径，\<OpenMPI 静态库的绝对路径> 用于有效路径到 OpenMPI 静态库，\<Boost 目录的绝对路径> 为 Boost C++ 头文件目录的有效路径，\<Limbo 目录的绝对路径> 为 Limbo 目录的有效路径，\<Parser-SPEF 的绝对路径directory> 为 Parser_SPEF 目录的有效路径，\<本征目录的绝对路径> 为本征目录的有效路径，\<未来 HYPRE 目录的绝对路径> 为尚未创建的 HYPRE 目录的有效路径，和 \<absolute path to MKL directory> 为 Intel Math Kernal L 的有效路径ibrary (MKL) 目录
     * 对于 Trusted Silicon Stratus 的用户，前面的安装步骤已经为您完成，因此在您的主目录中编辑文件".bashrc"，附加以下内容：
     ```bash
     # Skip rest of file if not interactive
@@ -180,35 +181,35 @@
     ```
     * 确保编译器版本支持以下标准：用于 Fortran 的 GNU Fortran（F95 的超集）、用于 C 语言的 C99 和用于 C++ 的 C++17。
     * 用于深度神经网络的英特尔 MKL-DNN **不**与安装兼容，只有常规英特尔 MKL 兼容
-8. 在重新登录之前退出shell并终止连接
-9. 通过运行 `echo $LIMBO_DIR` 确保正确加载了运行命令文件
+7. 在重新登录之前退出shell并终止连接
+8. 通过运行 `echo $LIMBO_DIR` 确保正确加载了运行命令文件
     * 如果 "bash" 用户没有任何显示，请在主目录中运行 `cp .bashrc .bash_profile`，退出 shell，重新登录，然后重试
     * 如果“tcsh”用户没有任何显示，请在主目录中运行`cp .cshrc .tcshrc`，退出shell，重新登录，然后重试
     * 对于所有其他错误，请联系主要维护者
-10. 从工作位置进入目录“Limbo”
-11. 运行 `git reset --hard 3.3.0` 以恢复到早期版本的存储库
+9.  从工作位置进入目录“Limbo”
+10. 运行 `git reset --hard 3.3.0` 以恢复到早期版本的存储库
     * 只有在引入 CMake 作为构建整个 Limbo 的方式之前，运行 gds2Para 所需的 Limbo 组件的部分安装才可行
     * 仅使用这些说明从 Limbo 构建必要的解析器，想要使用其他 Limbo 功能的用户应遵循该存储库中给出的安装说明
     * （可选）相信 Limbo 的必要组件和大多数其他组件可以按照这些说明使用 Limbo 顶层目录中的 `make` 构建，但这尚未经过测试
-12. 按照文件 /Limbo/limbo/thirdparty/lefdef/5.8/lefdefReadme.txt 中的说明安装第三方 LEF 和 DEF 阅读器
-13. 编译 Limbo 的解析器
+11. 按照文件 /Limbo/limbo/thirdparty/lefdef/5.8/lefdefReadme.txt 中的说明安装第三方 LEF 和 DEF 阅读器
+12. 编译 Limbo 的解析器
     * Limbo 的 GDSII 解析器：进入目录“/Limbo/limbo/parsers/gdsii/stream”。 在此目录中运行 `make -j 2` 以构建某些 Limbo 库
     * Limbo 的 LEF 解析器：进入目录“/Limbo/limbo/parsers/lef/adapt”。 运行`make -j 2`。
     * Limbo 的 DEF 解析器：进入目录“/Limbo/limbo/parsers/def/adapt”。 运行`make -j 2`。
-14. 确保名为 **libgdsparser.a**、**liblefparseradapt.a** 和 **libdefparseradapt.a** 的新静态库存在于目录“/Limbo/lib”中
-15. 按照 [HYPRE 设置](#HYPRE-Setup) 中的说明从 HYPRE 准备多重网格方法
+13. 确保名为 **libgdsparser.a**、**liblefparseradapt.a** 和 **libdefparseradapt.a** 的新静态库存在于目录“/Limbo/lib”中
+14. 按照 [HYPRE 设置](#HYPRE-Setup) 中的说明从 HYPRE 准备多重网格方法
     * 在遵循这些说明之前，有必要对主目录中的“.bashrc”和“.cshrc”进行所有更改
     * 根据 Linux 机器的设置，可能需要设置其他环境变量
     * 安装 HYPRE 后继续执行剩余步骤
-16. 从工作位置进入目录“gds2Para”
-17. （可选）将更多 GDSII 文件添加到工作位置的“examples/”目录中
+15. 从工作位置进入目录“gds2Para”
+16. （可选）将更多 GDSII 文件添加到工作位置的“examples/”目录中
     * 该软件的某些使用模式可能还需要一个与先前存在的示例格式类似的模拟输入文件（后缀前的文件名必须与“.gds”前的 GDSII 文件的文件名匹配）
     * 默认情况下，软件创建的文件将直接添加到当前工作目录中
     * 可选添加的文件可用于代替其余说明中的示例
-18. 在 shell 中运行 `make` 来编译可执行文件 **LayoutAnalyzer**
-19. 运行 `LayoutAnalyzer --help` 以获取可执行文件支持的可用控制模式列表
-20. 在 shell 中运行 `LayoutAnalyzer -r examples/nand2.gds` 以生成描述 GDSII 文件的终端输出
-21. 通过运行 `mpirun LayoutAnalyzer -s examples/SDFFRS_X2.gds examples/SDFFRS_X2.sim_input examples/SDFFRS_X2.cir` 来执行完整的参数提取以读取设计和仿真输入文件，进行所有分析，并将结果返回到 Xyce ( SPICE 兼容）子电路
+17. 在 shell 中运行 `make` 来编译可执行文件 **LayoutAnalyzer**
+18. 运行 `LayoutAnalyzer --help` 以获取可执行文件支持的可用控制模式列表
+19. 在 shell 中运行 `LayoutAnalyzer -r examples/nand2.gds` 以生成描述 GDSII 文件的终端输出
+20. 通过运行 `mpirun LayoutAnalyzer -s examples/SDFFRS_X2.gds examples/SDFFRS_X2.sim_input examples/SDFFRS_X2.cir` 来执行完整的参数提取以读取设计和仿真输入文件，进行所有分析，并将结果返回到 Xyce ( SPICE 兼容）子电路
     * 有必要使用 `mpirun` 来保证软件并行化部分的内存完整性。
 
 ## HYPRE 设置

@@ -31,12 +31,13 @@
 
 * Boost C++ Libraries (Boost version 1.57.0 or newer): `locate "filtering_stream.hpp"`
 
-**加速运行库
+**加速运行库**
+
 安装命令
 
    apt-cache search boost
    
-   apt-get install libboost-all-dev**
+   apt-get install libboost-all-dev
     
 * CMake (CMake version 3.7.0 or newer): `which cmake` and `cmake --version`
 

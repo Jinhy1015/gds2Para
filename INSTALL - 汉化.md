@@ -6,8 +6,12 @@
 
     * Selected package manager development tools
         * GNU Autoconf: `which autoconf`
-         GNU Autoconf是一个在Bourne shell下制作供编译、安装和打包软件的配置脚本的工具[1]。Autoconf并不受程式语言限制，常用于C、C++、Erlang和Objective-C。配置脚本控制了一个软件包在特定系统上的安装。在进行一系列测试后，配置脚本从模板中生成makefile与头文件进而调整软件包，使之适应某一种系统。Autoconf与Automake、Libtool等软件组成了GNU构建系统[2]。Autoconf由戴维·麦肯思于1991年夏天编写用于支持他在自由软件基金会的编程工作[3]。此后，Autoconf包含了多人编写的改进代码并成为了使用最广泛的自由编译配置软件。[4][5]
+**GNU Autoconf是一个在Bourne shell下制作供编译、安装和打包软件的配置脚本的工具[1]。Autoconf并不受程式语言限制，常用于C、C++、Erlang和Objective-C。配置脚本控制了一个软件包在特定系统上的安装。在进行一系列测试后，配置脚本从模板中生成makefile与头文件进而调整软件包，使之适应某一种系统。Autoconf与Automake、Libtool等软件组成了GNU构建系统[2]。Autoconf由戴维·麦肯思于1991年夏天编写用于支持他在自由软件基金会的编程工作[3]。此后，Autoconf包含了多人编写的改进代码并成为了使用最广泛的自由编译配置软件。**
+         
         * GNU Automake: `which automake`
+**GNU Automake是一种编程工具，可以产生供make程序使用的Makefile，用来编译程序。它是自由软件基金会发起的GNU计划的其中一项，作为GNU构建系统的一部分。automake所产生的Makefile符合GNU编程标准。**
+        
+        
         * GNU Bison: `which bison`
         * Flex: `which flex`
         * GNU Compiler Collection (GCC version 7 or newer): `which gcc`, `which g++`, and `which gfortran`

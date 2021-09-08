@@ -4,7 +4,7 @@
 ## 安装和使用
 1.通过查看这些类别中的以下每个命令是否有输出，确保机器上安装了以下程序：
 
-apt install -y autoconf automake bison flex make git lemon
+apt install -y autoconf automake bison flex g++ make git lemon
 
 * Selected package manager development tools
 

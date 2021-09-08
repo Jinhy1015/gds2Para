@@ -105,17 +105,17 @@
         1. 将 zip 存档移动到工作位置
         2. 使用命令 `unzip gds2Para-master.zip` 解压缩档案
         3. 将最近创建的目录从"gds2Para-master"重命名为"gds2Para"
-2. 使用 `git clone https://github.com/limbo018/Limbo.git` 将 [Limbo 存储库](https://github.com/limbo018/Limbo) 克隆到您的工作位置
+2. 使用 `git clone git@github.com:limbo018/Limbo.git` 将 [Limbo 存储库](https://github.com/limbo018/Limbo) 克隆到您的工作位置
     * 如果克隆失败，请尝试通过单击 Limbo 存储库代码选项卡上的绿色“克隆或下载”按钮，然后单击“下载 ZIP”来下载文件
         1. 将 zip 存档移动到工作位置
         2. 使用“unzip Limbo-master.zip”解压缩存档
         3. 将最近创建的目录从“Limbo-master”重命名为“Limbo”
-3. 使用 `git clone https://github.com/OpenTimer/Parser-SPEF.git` 将 [Parser-SPEF 存储库](https://github.com/OpenTimer/Parser-SPEF) 克隆到您的工作位置
+3. 使用 `git clone git@github.com:OpenTimer/Parser-SPEF.git` 将 [Parser-SPEF 存储库](https://github.com/OpenTimer/Parser-SPEF) 克隆到您的工作位置
     * 如果克隆失败，请尝试通过单击 Parser-SPEF 存储库代码选项卡上的绿色“克隆或下载”按钮，然后单击“下载 ZIP”来下载文件
         1. 将 zip 存档移动到工作位置
         2. 使用“unzip Parser-SPEF-master.zip”解压缩档案
         3. 将最近创建的目录从“Parser-SPEF-master”重命名为“Parser-SPEF”
-4. 使用 `git clone https://github.com/eigenteam/eigen-git-mirror 将 [eigen-git-mirror 存储库](https://github.com/eigenteam/eigen-git-mirror) 克隆到您的工作位置
+4. 使用 `git clone git@github.com:eigenteam/eigen-git-mirror.git` 将 [eigen-git-mirror 存储库](https://github.com/eigenteam/eigen-git-mirror) 克隆到您的工作位置
     * 如果克隆失败，请尝试通过单击 eigen-git-mirror 存储库的“代码”选项卡上的绿色“克隆或下载”按钮，然后单击"下载 ZIP"来下载文件
         1. 将 zip 存档移动到工作位置
         2. 使用 `unzip eigen-git-mirror-master.zip`解压缩档案

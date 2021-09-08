@@ -50,7 +50,13 @@
 
 * 下载cmake安装包: `wget https://github.com/Kitware/CMake/releases/download/v3.21.2/cmake-3.21.2.tar.gz` 获取地址: `https://cmake.org/download/`
 
+* 安装openssl: `apt-get install libssl-dev`
+
 * 解压cmake安装包:  `tar -zxvf cmake-3.21.2.tar.gz`
+
+* cd cmake-3.21.2 && ./bootstrap
+
+* make install
 
 * 此处待补全
 
@@ -58,8 +64,11 @@
     * Intel Math Kernel Library (MKL): `locate "mklvars.sh"`
 
    wget http://registrationcenter-download.intel.com/akdlm/irc_nas/tec/14895/l_mkl_2019.1.144.tgz
+   
    tar -zxvf l_mkl_2019.1.144.tgz
+   
    cd l_mkl_2019.1.144/
+   
    ./install.sh
    
    **此处注意修改`path`为/opt/intel**
